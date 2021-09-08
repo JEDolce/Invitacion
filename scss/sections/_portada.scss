@@ -1,0 +1,23 @@
+@use '../customs' as *; 
+
+.port-section {
+    height: 100vh;
+    font-family: 'Satisfy', cursive;
+    //background-image: url("/images/greeting-card.svg");
+    //background-repeat: no-repeat;
+    //background-position: center center;
+    //background-size: cover;
+    //background-attachment: fixed;
+
+    img {
+        height: 100%;
+        width: 100%;
+        position: center center;
+        
+    }
+
+    h1 {
+        color: $light-green;
+
+    }
+}

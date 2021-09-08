@@ -1,0 +1,20 @@
+1) Voy al icono de manage (margen inferior izquierdo)
+2) Voy a settings
+3) Voy a extensions
+4) Busco Live Sass compilar
+5) Selecciono live sass compiler> settings: formats
+6) Abro edit in settings.json
+7) Edito lo siguiente:
+
+    "liveSassCompile.settings.formats": [
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/dist/css",                           
+            "savePathSegmentKeys": "/dist/css",              
+            "savePathReplaceSegmentsWith": "/dist/css"
+        }
+    ],
+
+Si quiero que se guarden en la misma carpeta pongo null en donde puse /dist/css
