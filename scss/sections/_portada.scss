@@ -1,23 +1,27 @@
 @use '../customs' as *; 
+@use '../config/mixins' as *;
+
 
 .port-section {
+    position: relative;
     height: 100vh;
     font-family: 'Satisfy', cursive;
-    //background-image: url("/images/greeting-card.svg");
-    //background-repeat: no-repeat;
-    //background-position: center center;
-    //background-size: cover;
-    //background-attachment: fixed;
+    background-image: url("/images/greeting-card.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 
-    img {
-        height: 100%;
-        width: 100%;
-        position: center center;
-        
+    .container {
+        @include absCenter;
     }
 
     h1 {
-        color: $light-green;
-
+        font-size: 3.5rem;
+        color: $dark-green;
+        position: absolute;
+        top: 50%;
+        left: 50%;      //chequear
+        
     }
 }

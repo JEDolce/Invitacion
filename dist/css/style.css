@@ -11269,14 +11269,25 @@ textarea.form-control-lg {
   }
 }
 .port-section {
+  position: relative;
   height: 100vh;
   font-family: "Satisfy", cursive;
+  background-image: url("/images/greeting-card.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.port-section img {
-  height: 100%;
-  width: 100%;
-  position: center center;
+.port-section .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .port-section h1 {
-  color: #8ab683;
+  font-size: 3.5rem;
+  color: #3A6351;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
