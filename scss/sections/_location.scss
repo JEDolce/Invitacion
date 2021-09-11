@@ -1,1 +1,24 @@
 @use '../customs' as *; 
+@use '../config/mixins' as *;
+
+.location-section {
+    padding: 5rem 0 5rem 0;
+
+    i {
+        color: $beige;
+        
+    }
+
+    h4 {
+        margin: 2rem 0 2rem 0;
+    }
+
+    a {
+        text-decoration: none;
+        @include btn;
+    }
+
+
+
+
+}

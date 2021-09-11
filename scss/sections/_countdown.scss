@@ -1,2 +1,8 @@
 @use '../customs' as *; 
+@use '../config/mixins' as *;
+
+.count-section {
+    background-color: $beige;
+    height: 10rem;
+}
 

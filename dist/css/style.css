@@ -11275,8 +11275,18 @@ textarea.form-control-lg {
   background-image: url("/images/greeting-card.svg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: 50rem;
   background-attachment: fixed;
+}
+@media (min-width: 992px) {
+  .port-section {
+    background-size: 60rem;
+  }
+}
+@media (min-width: 1400px) {
+  .port-section {
+    background-size: 70rem;
+  }
 }
 .port-section .container {
   position: absolute;
@@ -11285,9 +11295,41 @@ textarea.form-control-lg {
   transform: translate(-50%, -50%);
 }
 .port-section h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  line-height: 6rem;
   color: #3A6351;
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-40%, -60%);
 }
+@media (min-width: 992px) {
+  .port-section h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+}
+@media (min-width: 1400px) {
+  .port-section h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+}
+
+.count-section {
+  background-color: #C68B59;
+  height: 10rem;
+}
+
+.location-section {
+  padding: 5rem 0 5rem 0;
+}
+.location-section i {
+  color: #C68B59;
+}
+.location-section h4 {
+  margin: 2rem 0 2rem 0;
+}
+.location-section a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */

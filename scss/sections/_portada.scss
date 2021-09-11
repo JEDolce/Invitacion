@@ -1,7 +1,6 @@
 @use '../customs' as *; 
 @use '../config/mixins' as *;
 
-
 .port-section {
     position: relative;
     height: 100vh;
@@ -9,19 +8,40 @@
     background-image: url("/images/greeting-card.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: 50rem;                  //Tambien puede ser cover
     background-attachment: fixed;
 
+    @include media-breakpoint-up(lg) {
+        background-size: 60rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        background-size: 70rem;
+    }
+    
     .container {
         @include absCenter;
     }
 
     h1 {
-        font-size: 3.5rem;
+        font-size: 4rem;
+        line-height: 6rem;
         color: $dark-green;
         position: absolute;
         top: 50%;
-        left: 50%;      //chequear
+        left: 50%; 
+        transform: translate(-40%, -60%);  
+
+        @include media-breakpoint-up(lg) {
+            font-size: 5rem;
+            line-height: 7rem;
+        }
+    
+        @include media-breakpoint-up(xxl) {
+            font-size: 6rem;
+            line-height: 8rem;
+        }
+
         
     }
 }
