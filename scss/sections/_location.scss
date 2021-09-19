@@ -1,12 +1,36 @@
 @use '../customs' as *; 
 @use '../config/mixins' as *;
 
-.location-section {
+.bloque-1-section {
     padding: 5rem 0 5rem 0;
+
+    @include media-breakpoint-up(md) {
+        height: 95vh;
+        padding: 6rem 0 0 0;
+    } 
+
+    .asistencia {
+        margin-top: 6rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0rem;
+
+            p {
+                margin-bottom: 5rem;
+            }
+        } 
+
+        @include media-breakpoint-up(lg) {
+
+            p {
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
 
     i {
         color: $beige;
-        font-size: 2.5rem;
+        font-size: 3rem;
         line-height: 1.5rem;
     }
 
@@ -14,11 +38,11 @@
         margin: 2rem 0 2rem 0;
     }
 
+    P {
+        margin-bottom: 2rem;
+    }
+
     a {
         text-decoration: none;
     }
-
-
-
-
 }

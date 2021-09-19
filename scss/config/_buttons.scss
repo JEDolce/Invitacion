@@ -3,12 +3,20 @@
 .btn {
     background-color: $beige;
     border: none;
-    width: 90%;
+    width: 70%;
     height: 3rem;
 
     a {
         color: $gray-100;
         font-weight: 400;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 80%;
+    } 
+
+    @include media-breakpoint-up(lg) {
+        width: 70%;
     }
 
     /*span {
@@ -33,5 +41,34 @@
         /*i {
             color: $beige;
         }*/
+    }
+
+    &--white {
+        background-color: #fff;
+        width: 70%;
+        height: 3rem;
+
+        a {
+            color: $beige;
+            font-weight: 400;
+        }
+    
+        @include media-breakpoint-up(md) {
+            width: 80%;
+        } 
+    
+        @include media-breakpoint-up(lg) {
+            width: 70%;
+        }
+
+        &:hover {
+            background-color: $beige;
+            transition: 0.35s ease-in-out;  
+            border: 1.5px solid #fff;  
+    
+            a {
+                color: #fff;
+            }
+        }
     }
 }

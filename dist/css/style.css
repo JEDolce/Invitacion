@@ -11271,7 +11271,7 @@ textarea.form-control-lg {
 .btn {
   background-color: #C68B59;
   border: none;
-  width: 90%;
+  width: 70%;
   height: 3rem;
   /*span {
       .icon { 
@@ -11285,6 +11285,16 @@ textarea.form-control-lg {
   color: #f8f9fa;
   font-weight: 400;
 }
+@media (min-width: 768px) {
+  .btn {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .btn {
+    width: 70%;
+  }
+}
 .btn:hover {
   background-color: #f8f9fa;
   transition: 0.35s ease-in-out;
@@ -11295,6 +11305,33 @@ textarea.form-control-lg {
 }
 .btn:hover a {
   color: #C68B59;
+}
+.btn--white {
+  background-color: #fff;
+  width: 70%;
+  height: 3rem;
+}
+.btn--white a {
+  color: #C68B59;
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .btn--white {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .btn--white {
+    width: 70%;
+  }
+}
+.btn--white:hover {
+  background-color: #C68B59;
+  transition: 0.35s ease-in-out;
+  border: 1.5px solid #fff;
+}
+.btn--white:hover a {
+  color: #fff;
 }
 
 .port-section {
@@ -11364,23 +11401,87 @@ textarea.form-control-lg {
   }
 }
 
-.location-section {
+.bloque-1-section {
   padding: 5rem 0 5rem 0;
 }
-.location-section i {
+@media (min-width: 768px) {
+  .bloque-1-section {
+    height: 95vh;
+    padding: 6rem 0 0 0;
+  }
+}
+.bloque-1-section .asistencia {
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .bloque-1-section .asistencia {
+    margin-top: 0rem;
+  }
+  .bloque-1-section .asistencia p {
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .bloque-1-section .asistencia p {
+    margin-bottom: 3.5rem;
+  }
+}
+.bloque-1-section i {
   color: #C68B59;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 1.5rem;
 }
-.location-section h4 {
+.bloque-1-section h4 {
   margin: 2rem 0 2rem 0;
 }
-.location-section a {
+.bloque-1-section P {
+  margin-bottom: 2rem;
+}
+.bloque-1-section a {
   text-decoration: none;
 }
 
-.contact-section {
+.bloque-2-section {
+  padding: 5rem 0 5rem 0;
+}
+@media (min-width: 768px) {
+  .bloque-2-section {
+    height: 95vh;
+    padding: 6rem 0 0 0;
+  }
+}
+.bloque-2-section .container {
   background-color: #C68B59;
+}
+.bloque-2-section .gracias {
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .bloque-2-section .gracias {
+    margin-top: 0rem;
+  }
+  .bloque-2-section .gracias p {
+    margin-bottom: 5rem;
+  }
+}
+@media (min-width: 992px) {
+  .bloque-2-section .gracias p {
+    margin-bottom: 3.5rem;
+  }
+}
+.bloque-2-section i {
+  color: #fff;
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+}
+.bloque-2-section h4 {
+  margin: 2rem 0 2rem 0;
+}
+.bloque-2-section P {
+  margin-bottom: 2rem;
+}
+.bloque-2-section a {
+  text-decoration: none;
 }
 
 footer {

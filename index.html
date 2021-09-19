@@ -26,42 +26,48 @@
         <div class="container">
             <div class="row text-center pt-4">
                 <p class="display-5">Faltan</p>
-                <p class="counter display-6">counter</p>
+                <p class="counter display-6"></p>
             </div>
         </div> 
     </section>
 
-    <!-- LOCATION & ASISTENCIA -->
-    <section class="location-section">
+    <!-- BLOQUE 1 -->
+    <section class="bloque-1-section">
         <div class="container p-4">
-            <div class="text-center">  <!-- Saque el row -->
+            <div class="row text-center">
+
+              <!-- LOCATION -->
+              <div class="col-md-6 location">
                 <i class="far fa-glass-cheers"></i>
-                <h4 class="text-uppercase display-3">Evento</h4> 
-                <p class="mb-4">El evento tendrá lugar el dia 4 de Diciembre a las 18:00 hs en la <span>Hosteria del Cazador</span>, Escobar. Tocá el botón de abajo para recibir las indicaciones para llegar. </p>
+                <h4>Evento</h4> 
+                <p>El evento tendrá lugar el dia 4 de Diciembre a las 18:00 hs en la <b>Hosteria del Cazador</b>, Escobar. Tocá el botón de abajo para recibir las indicaciones para llegar. </p>
                 <button type="button" class="btn rounded-pill">
-                    <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437">Llegar al evento</a>
+                    <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437">ubicacion</a>
                     <!-- <span>
                         <i class="fas fa-map-marker-alt icon"></i>  
                     </span> -->
                 </button>
+              </div> 
+
+              <!-- ASISTENCIA -->
+              <div class="col-md-6 asistencia">
+                <i class="fa fa-check-circle"></i>
+                <h4>Confirmacion de Asistenca</h4> 
+                <p>Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia! </p>
+                <button type="button" class="btn rounded-pill">
+                    <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437">confirmar</a>
+                    <!-- <span>
+                        <i class="fas fa-map-marker-alt icon"></i>  
+                    </span> -->
+                </button>
+              </div>  
             </div>
         </div>
-
-        <!-- ASISTENCIA -->
-    </section>
-
-    <!-- ASISTENCIA -->
-    <section class="asist-section">
-        <div class="rse-info">
-
-        </div>
-        <div class="rse-content">
-
-        </div> 
     </section>
 
     <!-- GALLERY -->
     <section class="gallery-section">
+        <h2>Un poco de nosotros:</h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -71,13 +77,9 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="/dist/images/24.jpg" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
                 <img src="/dist/images/DSC_0279.JPG" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
@@ -110,33 +112,42 @@
           </div>
     </section>
 
-    <!-- CBU & GRACIAS -->
-    <section class="cbu-section">
-        <div class="rse-info">
+    <!-- BLOQUE 2 -->
+    <section class="bloque-2-section">
+      <div class="container p-4 text-white">
+        <div class="row text-center">
 
+          <!-- CBU -->
+          <div class="col-md-6 cbu">
+            <i class="fal fa-gifts"></i>
+            <h4>Si deseas realizarnos un regalo...</h4>
+            <button type="button" class="btn--white rounded-pill">
+                <a class="text-uppercase gift" href="">Ver mas</a>
+            </button>
+          </div> 
+
+          <!-- GRACIAS -->
+          <div class="col-md-6 gracias">
+            <p>¡Gracias por acompañarnos en este momento tan importante!</p>
+          </div>  
         </div>
-        <div class="rse-content">
-
-        </div> 
-    </section>
-
-    <!-- GRACIAS -->
-    <section class="gracias-section">
-        <div class="rse-info">
-
-        </div>
-        <div class="rse-content">
-
-        </div> 
-    </section>
+    </div>
+  </section>
 
     <!-- CONTACT -->
     <section class="contact-section">
         <div class="container p-4">
-            <div class="text-center">  <!-- Saque el row -->
-                <i class="far fa-glass-cheers"></i>
-                <h4 class="text-uppercase display-3">informacion de contacto</h4> 
+            <div>  
+                <h4 class="text-uppercase display-6">informacion de contacto</h4> 
                 <p class="mb-4">Ante cualquier duda o consulta contactarse a: </p>
+                <div class="row">
+                  <div class="col-md-6 phone">
+                    <i class="far fa-phone-alt"></i><span> 011 3211 6712</span>
+                  </div>
+                  <div class="col-md-6 mail">
+                    <i class="far fa-envelope"></i><span> juandolce20@gmail.com</span>
+                  </div>
+                </div>
             </div>
     </section>
 
