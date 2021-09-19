@@ -11268,11 +11268,40 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn {
+  background-color: #C68B59;
+  border: none;
+  width: 90%;
+  height: 3rem;
+  /*span {
+      .icon { 
+          font-size: 1.25rem;
+          color: #f8f9fa;
+          margin-left: 1.25rem;
+      }
+  }*/
+}
+.btn a {
+  color: #f8f9fa;
+  font-weight: 400;
+}
+.btn:hover {
+  background-color: #f8f9fa;
+  transition: 0.35s ease-in-out;
+  border: 1.5px solid #C68B59;
+  /*i {
+      color: $beige;
+  }*/
+}
+.btn:hover a {
+  color: #C68B59;
+}
+
 .port-section {
   position: relative;
   height: 100vh;
   font-family: "Satisfy", cursive;
-  background-image: url("/images/greeting-card.svg");
+  background-image: url("../images/greeting-card.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50rem;
@@ -11320,16 +11349,47 @@ textarea.form-control-lg {
   background-color: #C68B59;
   height: 10rem;
 }
+.count-section p {
+  font-weight: 400;
+  color: #f8f9fa;
+}
+@media (min-width: 992px) {
+  .count-section {
+    height: 12rem;
+  }
+}
+@media (min-width: 1400px) {
+  .count-section {
+    height: 15rem;
+  }
+}
 
 .location-section {
   padding: 5rem 0 5rem 0;
 }
 .location-section i {
   color: #C68B59;
+  font-size: 2.5rem;
+  line-height: 1.5rem;
 }
 .location-section h4 {
   margin: 2rem 0 2rem 0;
 }
 .location-section a {
   text-decoration: none;
-}/*# sourceMappingURL=style.css.map */
+}
+
+.contact-section {
+  background-color: #C68B59;
+}
+
+footer {
+  background-color: #212529;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  opacity: 0.8;
+}
+footer p {
+  padding-top: 0.5rem;
+  color: #e9ecef;
+}

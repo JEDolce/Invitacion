@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,33 +25,30 @@
     <section class="count-section">
         <div class="container">
             <div class="row text-center pt-4">
-                <p class="display-3">Faltan</p>
-                <p class="counter">counter</p>
+                <p class="display-5">Faltan</p>
+                <p class="counter display-6">counter</p>
             </div>
         </div> 
     </section>
 
-    <!-- LOCATION -->
+    <!-- LOCATION & ASISTENCIA -->
     <section class="location-section">
         <div class="container p-4">
-            <div class="row text-center">
+            <div class="text-center">  <!-- Saque el row -->
                 <i class="far fa-glass-cheers"></i>
                 <h4 class="text-uppercase display-3">Evento</h4> 
-                <p class="mb-4">El evento tendrá lugar el dia 4 de Diciembre a las 18:00 horas en la <span>Hosteria del Cazador</span>, Escobar. Tocá el botón de abajo para recibir las indicaciones para llegar. </p>
-                <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437">Llegar al evento</a>
+                <p class="mb-4">El evento tendrá lugar el dia 4 de Diciembre a las 18:00 hs en la <span>Hosteria del Cazador</span>, Escobar. Tocá el botón de abajo para recibir las indicaciones para llegar. </p>
+                <button type="button" class="btn rounded-pill">
+                    <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437">Llegar al evento</a>
+                    <!-- <span>
+                        <i class="fas fa-map-marker-alt icon"></i>  
+                    </span> -->
+                </button>
             </div>
         </div>
-    </section>
 
-    <!-- GALLERY -->
-    <section class="gallery-section">
-        <div class="container">
-            <div class="row">
-                
-            </div>
-        </div>
+        <!-- ASISTENCIA -->
     </section>
-
 
     <!-- ASISTENCIA -->
     <section class="asist-section">
@@ -63,7 +60,57 @@
         </div> 
     </section>
 
-    <!-- CBU -->
+    <!-- GALLERY -->
+    <section class="gallery-section">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/dist/images/24.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/images/DSC_0279.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/images/DSC_5863.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/images/DSC_0528.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/images/DSC_0768.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/images/IMG_3215.JPG" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/images/23. Cuesta del Obispo 2021.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="/dist/images/DSC_1025 (2).jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- CBU & GRACIAS -->
     <section class="cbu-section">
         <div class="rse-info">
 
@@ -85,19 +132,24 @@
 
     <!-- CONTACT -->
     <section class="contact-section">
-        <div class="rse-info">
-
-        </div>
-        <div class="rse-content">
-
-        </div> 
+        <div class="container p-4">
+            <div class="text-center">  <!-- Saque el row -->
+                <i class="far fa-glass-cheers"></i>
+                <h4 class="text-uppercase display-3">informacion de contacto</h4> 
+                <p class="mb-4">Ante cualquier duda o consulta contactarse a: </p>
+            </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer-section">
-
+    <footer class="footer-section text-center">
+        <div class="container">
+            <div class="row">
+                <p>®JEDolce usa lo que quieras!</p>
+            </div>
+        </div>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./dist/js/time-counter.js" defer></script>
 </body>
 </html>

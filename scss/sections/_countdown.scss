@@ -4,5 +4,19 @@
 .count-section {
     background-color: $beige;
     height: 10rem;
+
+    p {
+        font-weight: 400;
+        color: $gray-100;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 12rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        height: 15rem;
+    }
+
 }
 

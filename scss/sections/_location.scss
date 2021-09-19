@@ -6,7 +6,8 @@
 
     i {
         color: $beige;
-        
+        font-size: 2.5rem;
+        line-height: 1.5rem;
     }
 
     h4 {
@@ -15,7 +16,6 @@
 
     a {
         text-decoration: none;
-        @include btn;
     }
 
 
