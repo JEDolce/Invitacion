@@ -1,16 +1,15 @@
 @use '../customs' as *;
 
 .bloque-2-section {
-    padding: 5rem 0 5rem 0;
+    margin-top: 5rem;
+    padding: 4rem 0 4rem 0;
+    background-color: $ligth-green;
+
 
     @include media-breakpoint-up(md) {
-        height: 95vh;
-        padding: 6rem 0 0 0;
+        height: 60vh;
+        padding: 4rem 0 0 0;
     } 
-
-    .container {
-        background-color: $beige;
-    }
 
     .gracias {
         margin-top: 6rem;
@@ -19,7 +18,7 @@
             margin-top: 0rem;
 
             p {
-                margin-bottom: 5rem;
+                margin: 5rem 0 5rem 3rem;
             }
         } 
 
@@ -47,5 +46,9 @@
 
     a {
         text-decoration: none;
+    }
+
+    .datos {
+        display: none;
     }
 }

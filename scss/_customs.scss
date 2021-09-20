@@ -2,11 +2,13 @@
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 // Colores
-$beige: #C68B59;
+$beige: rgb(201, 167, 117);
 $brown: #865439;
-$light-green: #8ab683;
-$bluegreen: #5B8A72; 
-$dark-green: #3A6351;
+
+$bluegreen: rgb(91, 138, 114); 
+$dark-green: rgb(58, 99, 81);
+$ligth-green: rgb(58, 99, 81, 0.9);
+$very-ligth-green:rgb(189, 210, 182);
 
 // White and Gray colors
 $white:    #fff;

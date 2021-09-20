@@ -11269,20 +11269,13 @@ textarea.form-control-lg {
   }
 }
 .btn {
-  background-color: #C68B59;
+  background-color: #c9a775;
   border: none;
   width: 70%;
   height: 3rem;
-  /*span {
-      .icon { 
-          font-size: 1.25rem;
-          color: #f8f9fa;
-          margin-left: 1.25rem;
-      }
-  }*/
 }
 .btn a {
-  color: #f8f9fa;
+  color: #fff;
   font-weight: 400;
 }
 @media (min-width: 768px) {
@@ -11296,24 +11289,22 @@ textarea.form-control-lg {
   }
 }
 .btn:hover {
-  background-color: #f8f9fa;
+  background-color: #fff;
   transition: 0.35s ease-in-out;
-  border: 1.5px solid #C68B59;
-  /*i {
-      color: $beige;
-  }*/
+  border: 1.5px solid #c9a775;
 }
 .btn:hover a {
-  color: #C68B59;
+  color: #c9a775;
 }
 .btn--white {
   background-color: #fff;
-  width: 70%;
+  border: 1px solid rgba(58, 99, 81, 0.9);
+  width: 50%;
   height: 3rem;
 }
 .btn--white a {
-  color: #C68B59;
-  font-weight: 400;
+  color: rgba(58, 99, 81, 0.9);
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .btn--white {
@@ -11326,9 +11317,9 @@ textarea.form-control-lg {
   }
 }
 .btn--white:hover {
-  background-color: #C68B59;
+  background-color: rgba(58, 99, 81, 0.9);
   transition: 0.35s ease-in-out;
-  border: 1.5px solid #fff;
+  border: 1px solid #fff;
 }
 .btn--white:hover a {
   color: #fff;
@@ -11363,7 +11354,7 @@ textarea.form-control-lg {
 .port-section h1 {
   font-size: 4rem;
   line-height: 6rem;
-  color: #3A6351;
+  color: #3a6351;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11383,7 +11374,7 @@ textarea.form-control-lg {
 }
 
 .count-section {
-  background-color: #C68B59;
+  background-color: rgba(58, 99, 81, 0.9);
   height: 10rem;
 }
 .count-section p {
@@ -11407,7 +11398,7 @@ textarea.form-control-lg {
 @media (min-width: 768px) {
   .bloque-1-section {
     height: 95vh;
-    padding: 6rem 0 0 0;
+    padding: 8rem 0 0 0;
   }
 }
 .bloque-1-section .asistencia {
@@ -11427,12 +11418,12 @@ textarea.form-control-lg {
   }
 }
 .bloque-1-section i {
-  color: #C68B59;
-  font-size: 3rem;
+  color: #c9a775;
+  font-size: 3.5rem;
   line-height: 1.5rem;
 }
 .bloque-1-section h4 {
-  margin: 2rem 0 2rem 0;
+  margin: 1.5rem 0 1rem 0;
 }
 .bloque-1-section P {
   margin-bottom: 2rem;
@@ -11442,16 +11433,15 @@ textarea.form-control-lg {
 }
 
 .bloque-2-section {
-  padding: 5rem 0 5rem 0;
+  margin-top: 5rem;
+  padding: 4rem 0 4rem 0;
+  background-color: rgba(58, 99, 81, 0.9);
 }
 @media (min-width: 768px) {
   .bloque-2-section {
-    height: 95vh;
-    padding: 6rem 0 0 0;
+    height: 60vh;
+    padding: 4rem 0 0 0;
   }
-}
-.bloque-2-section .container {
-  background-color: #C68B59;
 }
 .bloque-2-section .gracias {
   margin-top: 6rem;
@@ -11461,7 +11451,7 @@ textarea.form-control-lg {
     margin-top: 0rem;
   }
   .bloque-2-section .gracias p {
-    margin-bottom: 5rem;
+    margin: 5rem 0 5rem 3rem;
   }
 }
 @media (min-width: 992px) {
@@ -11483,7 +11473,13 @@ textarea.form-control-lg {
 .bloque-2-section a {
   text-decoration: none;
 }
+.bloque-2-section .datos {
+  display: none;
+}
 
+.contact-section {
+  background-color: #bdd2b6;
+}
 footer {
   background-color: #212529;
   font-size: 0.9rem;
@@ -11493,4 +11489,20 @@ footer {
 footer p {
   padding-top: 0.5rem;
   color: #e9ecef;
+}
+
+.music-section {
+  height: 40vh;
+}
+.music-section .container {
+  margin-top: 5rem;
+}
+.music-section h4 {
+  margin: 1.5rem 0 1rem 0;
+}
+.music-section P {
+  margin-bottom: 2rem;
+}
+.music-section a {
+  text-decoration: none;
 }

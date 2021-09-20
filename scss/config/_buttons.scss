@@ -7,7 +7,7 @@
     height: 3rem;
 
     a {
-        color: $gray-100;
+        color: #fff;
         font-weight: 400;
     }
 
@@ -17,40 +17,27 @@
 
     @include media-breakpoint-up(lg) {
         width: 70%;
-    }
-
-    /*span {
-        .icon { 
-            font-size: 1.25rem;
-            color: #f8f9fa;
-            margin-left: 1.25rem;
-        }
-    }*/  
-
+    } 
 
     &:hover {
-        background-color: $gray-100;
+        background-color: #fff;
         transition: 0.35s ease-in-out;  
         border: 1.5px solid $beige;  
 
         a {
             color: $beige;
         }
-
-        
-        /*i {
-            color: $beige;
-        }*/
     }
 
     &--white {
         background-color: #fff;
-        width: 70%;
+        border: 1px solid $ligth-green;
+        width: 50%;
         height: 3rem;
 
         a {
-            color: $beige;
-            font-weight: 400;
+            color: $ligth-green;
+            font-weight: 600;
         }
     
         @include media-breakpoint-up(md) {
@@ -62,9 +49,9 @@
         }
 
         &:hover {
-            background-color: $beige;
+            background-color: $ligth-green;
             transition: 0.35s ease-in-out;  
-            border: 1.5px solid #fff;  
+            border: 1px solid #fff;  
     
             a {
                 color: #fff;
