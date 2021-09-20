@@ -1,7 +1,14 @@
 @use '../customs' as *; 
 
 .gallery-section {
+    padding-bottom: 5rem;
+    background-color: $beige-1;
     
+    h3 {
+        color: $ligth-green;
+        margin: 0 0 1rem 1.5rem;
+        padding-top: 2rem;
+    }
 }
 
 .carousel {

@@ -42,7 +42,7 @@
                 <h4>Evento</h4> 
                 <p>El evento tendrá lugar el dia 4 de Diciembre a las 18:00 hs en la <b>Hosteria del Cazador</b>, Escobar. Tocá el botón de abajo para recibir las indicaciones para llegar. </p>
                 <button type="button" class="btn rounded-pill">
-                    <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437">ubicacion</a>
+                    <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437" target="_blank">ubicacion</a>
                     <!-- <span>
                         <i class="fas fa-map-marker-alt icon"></i>  
                     </span> -->
@@ -55,7 +55,7 @@
                 <h4>Confirmación de Asistencia</h4> 
                 <p>Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia! </p>
                 <button type="button" class="btn rounded-pill">
-                    <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437">confirmar</a>
+                    <a class="text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLScKDL_cHMmxCsFQ9fuJTqXmd9XStU6AGTJru-skpJ6Ugokt_A/viewform" target="_blank">confirmar</a>
                     <!-- <span>
                         <i class="fas fa-map-marker-alt icon"></i>  
                     </span> -->
@@ -67,7 +67,7 @@
 
     <!-- GALLERY -->
     <section class="gallery-section">
-        <h2>Un poco de nosotros:</h2>
+        <h3>Un poco de nosotros...</h3>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -116,9 +116,9 @@
           <!-- CBU -->
           <div class="col-md-6 cbu">
             <i class="fal fa-gifts"></i>
-            <h4>Si deseas realizarnos un regalo...</h4>
-            <button type="button" class="btn--white rounded-pill">
-                <a class="text-uppercase gift" href="">Ver mas</a>
+            <h4 class="display-6">Si deseas realizarnos un regalo...</h4>
+            <button type="button" class="btn--white rounded-pill gift">
+                <a class="text-uppercase">Ver mas</a>
             </button>
           </div> 
 
@@ -130,9 +130,20 @@
     </div>
 
     <!-- DATOS -->
-    <div class="datos">
-      <p>Datos de cuenta</p>
+
+    <div id="fondo"></div>
+     
+    <div class="datos display text-center">
+        <i class="far fa-times close"></i>
+        <h3>Datos Bancarios</h3>
+        <p>Juan Enrique Dolcemáscolo</p>
+        <p>CUIL: 20-35329788-1</p>
+        <p>CC: 369-358635/0</p>
+        <p>CBU: 0720369388000035863504</p>
+        <p>Alias: JAPON.INDIA.FONDO</p>
+        <p>Banco Santander</p>
     </div>
+    
   </section>
 
   <!-- MUSICA -->
@@ -141,7 +152,7 @@
       <h4>¿QUÉ CANCIONES NO PUEDEN FALTAR?</h4>
       <p>¡Ayudanos sugiriendo las canciones que pensás que no pueden faltar en la fiesta!</p>
       <button type="button" class="btn rounded-pill">
-          <a class="text-uppercase" href="">Sugerencias</a>
+          <a class="text-uppercase" href="https://docs.google.com/forms/d/e/1FAIpQLSct2VVWc8mwWrroo1ZfA5ltbsKt3g3-bISxqVCTP27CXjB5Rg/viewform" target="_blank">Sugerencias</a>
       </button>
     </div>
   </section>
@@ -151,14 +162,20 @@
         <div class="container p-4">
             <div>  
                 <h4 class="text-uppercase display-6">informacion de contacto</h4> 
-                <p class="mb-4">Ante cualquier duda o consulta contactarse a: </p>
+                <p class="mb-4">Si queres consultarnos algo: </p>
                 <div class="row">
-                  <div class="col-md-6 phone">
-                    <i class="far fa-phone-alt"></i><span>  011 3211-6712 | 011 3446-3180</span>
+                  <div class="col-md-4 phone">
+                    <i class="far fa-phone-alt"></i><span>(011) 3211-6712 | (011) 3446-3180</span>
                   </div>
-                  <div class="col-md-6 mail">
-                    <i class="far fa-envelope"></i><span> <a href="mailto:juandolce20@gmail.com">juandolce20@gmail.com </a> | <a href="mailto:yani.toledo12@gmail.com">yani.toledo12@gmail.com</a></span>
+                  <div class="col-md-4 mail">
+                    <i class="far fa-envelope"></i>
+                    <div>
+                        <a href="mailto:juandolce20@gmail.com">juandolce20@gmail.com</a><br><a class="yat" href="mailto:yani.toledo12@gmail.com">yani.toledo12@gmail.com</a>
+                    </div>
                   </div> 
+                  <div class="col-md-4 insta">
+                    <i class="fab fa-instagram"></i><a href="">#yaniykike</a>  
+                  </div>
                 </div>
             </div>
     </section>
@@ -174,5 +191,6 @@
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="./dist/js/time-counter.js" defer></script>
+    <script src="./dist/js/datos.js" defer></script>
 </body>
 </html>

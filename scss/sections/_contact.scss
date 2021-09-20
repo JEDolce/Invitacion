@@ -3,12 +3,40 @@
 .contact-section {
     background-color: $very-ligth-green;
 
-    .phone {
+    .row {
 
-    }
+        .phone {
+            margin-bottom: 1rem;
+        }
+    
+        .mail {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 1rem;
+            
+            a {
+                color: $black;
 
-    .mail {
+            }
 
+            i {
+                padding-top: 0.5rem;
+            }
+        }
+
+        .insta {
+
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    
+
+        i {
+            font-size: 1.25rem;
+            margin-right: 0.5rem;
+        }
     }
 
 }

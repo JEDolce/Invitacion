@@ -11271,21 +11271,16 @@ textarea.form-control-lg {
 .btn {
   background-color: #c9a775;
   border: none;
-  width: 70%;
+  width: 12rem;
   height: 3rem;
 }
 .btn a {
   color: #fff;
   font-weight: 400;
 }
-@media (min-width: 768px) {
-  .btn {
-    width: 80%;
-  }
-}
 @media (min-width: 992px) {
   .btn {
-    width: 70%;
+    width: 15rem;
   }
 }
 .btn:hover {
@@ -11299,7 +11294,7 @@ textarea.form-control-lg {
 .btn--white {
   background-color: #fff;
   border: 1px solid rgba(58, 99, 81, 0.9);
-  width: 50%;
+  width: 8rem;
   height: 3rem;
 }
 .btn--white a {
@@ -11308,12 +11303,12 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .btn--white {
-    width: 80%;
+    width: 12rem;
   }
 }
 @media (min-width: 992px) {
   .btn--white {
-    width: 70%;
+    width: 15rem;
   }
 }
 .btn--white:hover {
@@ -11353,7 +11348,7 @@ textarea.form-control-lg {
 }
 .port-section h1 {
   font-size: 4rem;
-  line-height: 6rem;
+  line-height: 6.5rem;
   color: #3a6351;
   position: absolute;
   top: 50%;
@@ -11433,17 +11428,18 @@ textarea.form-control-lg {
 }
 
 .bloque-2-section {
-  margin-top: 5rem;
+  position: relative;
   padding: 4rem 0 4rem 0;
   background-color: rgba(58, 99, 81, 0.9);
 }
 @media (min-width: 768px) {
   .bloque-2-section {
-    height: 60vh;
-    padding: 4rem 0 0 0;
+    height: 30rem;
+    padding: 6rem 0 0 0;
   }
 }
 .bloque-2-section .gracias {
+  font-size: 1.25rem;
   margin-top: 6rem;
 }
 @media (min-width: 768px) {
@@ -11456,12 +11452,13 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .bloque-2-section .gracias p {
+    font-size: 1.5rem;
     margin-bottom: 3.5rem;
   }
 }
 .bloque-2-section i {
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   line-height: 1.5rem;
 }
 .bloque-2-section h4 {
@@ -11474,14 +11471,80 @@ textarea.form-control-lg {
   text-decoration: none;
 }
 .bloque-2-section .datos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 10px;
+}
+.bloque-2-section .datos .close {
+  position: absolute;
+  top: 2%;
+  left: 90%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000;
+}
+.bloque-2-section .datos h3 {
+  color: #c9a775;
+  margin: 1.5rem 0 1.5rem 0;
+}
+.bloque-2-section .datos p {
+  margin-bottom: 0.5rem;
+}
+.bloque-2-section .display {
   display: none;
+}
+.bloque-2-section .fondo {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(#c9a775, transparent);
+}
+
+.gallery-section {
+  padding-bottom: 5rem;
+  background-color: #fbf4e9;
+}
+.gallery-section h3 {
+  color: rgba(58, 99, 81, 0.9);
+  margin: 0 0 1rem 1.5rem;
+  padding-top: 2rem;
 }
 
 .contact-section {
   background-color: #bdd2b6;
 }
+.contact-section .row .phone {
+  margin-bottom: 1rem;
+}
+.contact-section .row .mail {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.contact-section .row .mail a {
+  color: #000;
+}
+.contact-section .row .mail i {
+  padding-top: 0.5rem;
+}
+.contact-section .row .insta a {
+  text-decoration: none;
+  color: #000;
+}
+.contact-section .row i {
+  font-size: 1.25rem;
+  margin-right: 0.5rem;
+}
+
 footer {
-  background-color: #212529;
+  background-color: #000;
   font-size: 0.9rem;
   height: 2.5rem;
   opacity: 0.8;
@@ -11492,10 +11555,10 @@ footer p {
 }
 
 .music-section {
-  height: 40vh;
+  height: 22rem;
 }
 .music-section .container {
-  margin-top: 5rem;
+  padding-top: 3rem;
 }
 .music-section h4 {
   margin: 1.5rem 0 1rem 0;
@@ -11506,3 +11569,19 @@ footer p {
 .music-section a {
   text-decoration: none;
 }
+@media (min-width: 768px) {
+  .music-section {
+    padding-top: 2rem;
+  }
+  .music-section p {
+    font-size: 1.15rem;
+  }
+}
+@media (min-width: 992px) {
+  .music-section h4 {
+    font-size: 2rem;
+  }
+  .music-section p {
+    font-size: 1.35rem;
+  }
+}/*# sourceMappingURL=style.css.map */

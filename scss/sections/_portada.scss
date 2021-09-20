@@ -8,7 +8,7 @@
     background-image: url("../images/greeting-card.svg");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50rem;                  //Tambien puede ser cover
+    background-size: 50rem;                  //Tambien puede ser cover 
     background-attachment: fixed;
 
     @include media-breakpoint-up(lg) {
@@ -25,7 +25,7 @@
 
     h1 {
         font-size: 4rem;
-        line-height: 6rem;
+        line-height: 6.5rem;
         color: $dark-green;
         position: absolute;
         top: 50%;

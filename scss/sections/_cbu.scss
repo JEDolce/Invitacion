@@ -1,17 +1,19 @@
 @use '../customs' as *;
+@use '../config/mixins' as *;
 
 .bloque-2-section {
-    margin-top: 5rem;
+    position: relative;
     padding: 4rem 0 4rem 0;
     background-color: $ligth-green;
 
 
     @include media-breakpoint-up(md) {
-        height: 60vh;
-        padding: 4rem 0 0 0;
+        height: 30rem;
+        padding: 6rem 0 0 0;
     } 
 
     .gracias {
+        font-size: 1.25rem;
         margin-top: 6rem;
 
         @include media-breakpoint-up(md) {
@@ -25,14 +27,15 @@
         @include media-breakpoint-up(lg) {
 
             p {
+                font-size: 1.5rem;
                 margin-bottom: 3.5rem;
             }
         }
     }
 
     i {
-        color: #fff;
-        font-size: 2.5rem;
+        color: $white;
+        font-size: 3.5rem;
         line-height: 1.5rem;
     }
 
@@ -49,6 +52,48 @@
     }
 
     .datos {
-        display: none;
+        @include absCenter;
+        background-color: $white;
+        width: 18rem;
+        height: 18rem;
+        border-radius: 10px;
+        
+        .close {
+            position: absolute;
+            top: 2%;
+            left: 90%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: $black;
+        }
+
+        h3 {
+            color: $beige;
+            margin: 1.5rem 0 1.5rem 0;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    .display {
+        display: none;  
+    }
+
+    .fondo {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: linear-gradient($beige, transparent);
     }
 }
+
+
+
+
+
+        
+
