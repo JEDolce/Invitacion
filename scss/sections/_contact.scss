@@ -3,7 +3,17 @@
 .contact-section {
     background-color: $very-ligth-green;
 
+    @include media-breakpoint-up(md) {
+            
+        p {
+            font-size: 1.25rem;
+        }
+    }
+
     .row {
+        @include media-breakpoint-up(lg) {
+            font-size: 1.25rem;
+        } 
 
         .phone {
             margin-bottom: 1rem;
@@ -16,12 +26,15 @@
             
             a {
                 color: $black;
-
             }
 
             i {
-                padding-top: 0.5rem;
+                padding-top: 0.25rem;
             }
+
+            @include media-breakpoint-up(md) {
+                padding-left: 1rem;
+            } 
         }
 
         .insta {
@@ -30,9 +43,16 @@
                 text-decoration: none;
                 color: $black;
             }
+
+            @include media-breakpoint-up(md) {
+                padding-left: 2rem;
+            } 
+
+            @include media-breakpoint-up(lg) {
+                padding-left: 0;
+            } 
         }
     
-
         i {
             font-size: 1.25rem;
             margin-right: 0.5rem;

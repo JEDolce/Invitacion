@@ -1,20 +1,48 @@
 @use '../customs' as *; 
+@use '../config/mixins' as *;
 
 .gallery-section {
     padding-bottom: 5rem;
     background-color: $beige-1;
-    
+    position: relative;
+
     h3 {
         color: $ligth-green;
-        margin: 0 0 1rem 1.5rem;
+        margin: 0 0 1.5rem 1.5rem;
         padding-top: 2rem;
-    }
-}
 
-.carousel {
+        @include media-breakpoint-up(xxl) {
+            padding-bottom: 2.5rem;
+        }
+    }
 
     @include media-breakpoint-up(lg) {
+        height: 50rem;
+    }
 
-        
+    @include media-breakpoint-up(xl) {
+        height: 52rem;
+    }
+
+    @include media-breakpoint-up(xxl) {
+        height: 53rem;
+    }
+
+    .carousel {
+
+        @include media-breakpoint-up(lg) {
+            @include absCenter;
+            width: 55rem;
+            
+            &-inner {
+                border-radius: 20px;
+                box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+            }    
+        }
+
+        @include media-breakpoint-up(xxl) {
+            width: 60rem;
+        }
     }
 }
+

@@ -3,29 +3,38 @@
 
 .bloque-1-section {
     padding: 5rem 0 5rem 0;
+    position: relative;
 
     @include media-breakpoint-up(md) {
-        height: 95vh;
-        padding: 8rem 0 0 0;
+        height: 30rem;
+
+        .container {
+            @include absCenter;
+
+            p {
+                height: 5rem;
+                font-size: 1.1rem;
+            }
+
+            .row {
+                padding-top: 6rem;
+            }
+        }    
     } 
 
-    .asistencia {
-        margin-top: 6rem;
+    @include media-breakpoint-up(md) {
 
-        @include media-breakpoint-up(md) {
-            margin-top: 0rem;
+        .container {
 
             p {
-                margin-bottom: 5rem;
+               // height: 5rem;
+                font-size: 1.25rem;
             }
-        } 
+        }    
+    } 
 
-        @include media-breakpoint-up(lg) {
-
-            p {
-                margin-bottom: 3.5rem;
-            }
-        }
+    .location {
+        margin-bottom: 6rem;
     }
 
     i {

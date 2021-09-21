@@ -11268,6 +11268,56 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@-webkit-keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+@keyframes move-chevron {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(2.28rem);
+  }
+  66% {
+    opacity: 1;
+    transform: translateY(3.12rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(4.8rem) scale(0.5);
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .btn {
   background-color: #c9a775;
   border: none;
@@ -11293,7 +11343,7 @@ textarea.form-control-lg {
 }
 .btn--white {
   background-color: #fff;
-  border: 1px solid rgba(58, 99, 81, 0.9);
+  border: 2px solid rgba(58, 99, 81, 0.9);
   width: 8rem;
   height: 3rem;
 }
@@ -11329,15 +11379,13 @@ textarea.form-control-lg {
   background-position: center center;
   background-size: 50rem;
   background-attachment: fixed;
+  /*@include media-breakpoint-up(lg) {
+      background-size: 70rem;
+  }*/
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .port-section {
     background-size: 60rem;
-  }
-}
-@media (min-width: 1400px) {
-  .port-section {
-    background-size: 70rem;
   }
 }
 .port-section .container {
@@ -11354,6 +11402,12 @@ textarea.form-control-lg {
   top: 50%;
   left: 50%;
   transform: translate(-40%, -60%);
+  -webkit-animation: fade-in 1.5s ease-in-out;
+          animation: fade-in 1.5s ease-in-out;
+  /* @include media-breakpoint-up(xxl) {
+       font-size: 6rem;
+       line-height: 8rem;
+   }   */
 }
 @media (min-width: 992px) {
   .port-section h1 {
@@ -11361,11 +11415,53 @@ textarea.form-control-lg {
     line-height: 7rem;
   }
 }
-@media (min-width: 1400px) {
-  .port-section h1 {
-    font-size: 6rem;
-    line-height: 8rem;
-  }
+.port-section .arrow {
+  display: block;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+.port-section .arrow .chevron {
+  position: absolute;
+  width: 2.1rem;
+  height: 0.48rem;
+  opacity: 0;
+  transform: scale(0.3);
+  -webkit-animation: move-chevron 3s ease-out infinite;
+          animation: move-chevron 3s ease-out infinite;
+}
+.port-section .arrow .chevron:first-child {
+  -webkit-animation: move-chevron 3s ease-out 1s infinite;
+          animation: move-chevron 3s ease-out 1s infinite;
+}
+.port-section .arrow .chevron:nth-child(2) {
+  -webkit-animation: move-chevron 3s ease-out 2s infinite;
+          animation: move-chevron 3s ease-out 2s infinite;
+}
+.port-section .arrow .chevron:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #3a6351;
+  left: 0;
+  transform: skewY(30deg);
+}
+.port-section .arrow .chevron:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: #3a6351;
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
 }
 
 .count-section {
@@ -11389,28 +11485,33 @@ textarea.form-control-lg {
 
 .bloque-1-section {
   padding: 5rem 0 5rem 0;
+  position: relative;
 }
 @media (min-width: 768px) {
   .bloque-1-section {
-    height: 95vh;
-    padding: 8rem 0 0 0;
+    height: 30rem;
   }
-}
-.bloque-1-section .asistencia {
-  margin-top: 6rem;
+  .bloque-1-section .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .bloque-1-section .container p {
+    height: 5rem;
+    font-size: 1.1rem;
+  }
+  .bloque-1-section .container .row {
+    padding-top: 6rem;
+  }
 }
 @media (min-width: 768px) {
-  .bloque-1-section .asistencia {
-    margin-top: 0rem;
-  }
-  .bloque-1-section .asistencia p {
-    margin-bottom: 5rem;
+  .bloque-1-section .container p {
+    font-size: 1.25rem;
   }
 }
-@media (min-width: 992px) {
-  .bloque-1-section .asistencia p {
-    margin-bottom: 3.5rem;
-  }
+.bloque-1-section .location {
+  margin-bottom: 6rem;
 }
 .bloque-1-section i {
   color: #c9a775;
@@ -11510,15 +11611,64 @@ textarea.form-control-lg {
 .gallery-section {
   padding-bottom: 5rem;
   background-color: #fbf4e9;
+  position: relative;
 }
 .gallery-section h3 {
   color: rgba(58, 99, 81, 0.9);
-  margin: 0 0 1rem 1.5rem;
+  margin: 0 0 1.5rem 1.5rem;
   padding-top: 2rem;
+}
+@media (min-width: 1400px) {
+  .gallery-section h3 {
+    padding-bottom: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .gallery-section {
+    height: 50rem;
+  }
+}
+@media (min-width: 1200px) {
+  .gallery-section {
+    height: 52rem;
+  }
+}
+@media (min-width: 1400px) {
+  .gallery-section {
+    height: 53rem;
+  }
+}
+@media (min-width: 992px) {
+  .gallery-section .carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55rem;
+  }
+  .gallery-section .carousel-inner {
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (min-width: 1400px) {
+  .gallery-section .carousel {
+    width: 60rem;
+  }
 }
 
 .contact-section {
   background-color: #bdd2b6;
+}
+@media (min-width: 768px) {
+  .contact-section p {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact-section .row {
+    font-size: 1.25rem;
+  }
 }
 .contact-section .row .phone {
   margin-bottom: 1rem;
@@ -11532,11 +11682,26 @@ textarea.form-control-lg {
   color: #000;
 }
 .contact-section .row .mail i {
-  padding-top: 0.5rem;
+  padding-top: 0.25rem;
+}
+@media (min-width: 768px) {
+  .contact-section .row .mail {
+    padding-left: 1rem;
+  }
 }
 .contact-section .row .insta a {
   text-decoration: none;
   color: #000;
+}
+@media (min-width: 768px) {
+  .contact-section .row .insta {
+    padding-left: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact-section .row .insta {
+    padding-left: 0;
+  }
 }
 .contact-section .row i {
   font-size: 1.25rem;
