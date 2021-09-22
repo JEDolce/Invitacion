@@ -56,9 +56,10 @@
     .datos {
         @include absCenter;
         background-color: $white;
-        width: 18rem;
-        height: 18rem;
+        width: 19rem;
+        height: 19rem;
         border-radius: 10px;
+        font-weight: 500;
         
         .close {
             position: absolute;

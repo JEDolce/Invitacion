@@ -11625,9 +11625,10 @@ textarea.form-control-lg {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff;
-  width: 18rem;
-  height: 18rem;
+  width: 19rem;
+  height: 19rem;
   border-radius: 10px;
+  font-weight: 500;
 }
 .bloque-2-section .datos .close {
   position: absolute;
@@ -11775,6 +11776,9 @@ textarea.form-control-lg {
 @media (min-width: 992px) {
   .contact-section .row .insta {
     padding-left: 0;
+  }
+  .contact-section .row .insta span {
+    font-size: 1.25rem;
   }
 }
 .contact-section .row i {

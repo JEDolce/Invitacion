@@ -65,6 +65,10 @@
 
             @include media-breakpoint-up(lg) {
                 padding-left: 0;
+
+                span {
+                    font-size: 1.25rem;
+                }
             } 
         }
     
