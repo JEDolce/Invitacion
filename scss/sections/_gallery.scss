@@ -27,6 +27,10 @@
 
     @include media-breakpoint-up(lg) {
         height: 50rem;
+
+        h3 {
+            padding-top: 2.8rem;
+        }
     }
 
     @include media-breakpoint-up(xl) {

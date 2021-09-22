@@ -11382,6 +11382,17 @@ textarea.form-control-lg {
   color: #fff;
 }
 
+@media (min-width: 768px) {
+  .display-6 {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .display-6 {
+    font-size: 1.8rem;
+  }
+}
+
 .port-section {
   position: relative;
   height: 100vh;
@@ -11482,11 +11493,12 @@ textarea.form-control-lg {
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
-.count-section h1 {
+.count-section h3 {
   letter-spacing: 0.25rem;
+  margin-bottom: 1rem;
 }
 @media (min-width: 1400px) {
-  .count-section h1 {
+  .count-section h3 {
     font-size: 2.5rem;
     letter-spacing: 0.3rem;
   }
@@ -11498,12 +11510,12 @@ textarea.form-control-lg {
 .count-section ul li {
   display: inline-block;
   list-style-type: none;
-  padding: 0.45rem;
+  padding: 0.35rem;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
   .count-section ul li {
-    padding: 0.8rem;
+    padding: 1rem;
   }
 }
 @media (min-width: 1400px) {
@@ -11514,7 +11526,7 @@ textarea.form-control-lg {
 }
 .count-section ul li span {
   display: block;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 @media (min-width: 1400px) {
   .count-section ul li span {
@@ -11544,7 +11556,6 @@ textarea.form-control-lg {
   }
   .bloque-1-section .container p {
     height: 5rem;
-    font-size: 1.1rem;
   }
   .bloque-1-section .container .row {
     padding-top: 6rem;
@@ -11552,7 +11563,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 768px) {
   .bloque-1-section .container p {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 }
 .bloque-1-section .location {
@@ -11563,7 +11574,7 @@ textarea.form-control-lg {
   font-size: 3.5rem;
   line-height: 1.5rem;
 }
-.bloque-1-section h4 {
+.bloque-1-section h5 {
   margin: 1.5rem 0 1rem 0;
   letter-spacing: 2px;
 }
@@ -11587,7 +11598,7 @@ textarea.form-control-lg {
   }
 }
 .bloque-2-section .gracias {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin-top: 6rem;
 }
 @media (min-width: 768px) {
@@ -11595,13 +11606,13 @@ textarea.form-control-lg {
     margin-top: 0rem;
   }
   .bloque-2-section .gracias p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 5rem 0 5rem 3rem;
   }
 }
 @media (min-width: 992px) {
   .bloque-2-section .gracias p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 3.5rem;
   }
 }
@@ -11687,6 +11698,9 @@ textarea.form-control-lg {
   .gallery-section {
     height: 50rem;
   }
+  .gallery-section h3 {
+    padding-top: 2.8rem;
+  }
 }
 @media (min-width: 1200px) {
   .gallery-section {
@@ -11733,7 +11747,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 992px) {
   .contact-section .row {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 }
 .contact-section .row .phone {
@@ -11823,14 +11837,11 @@ footer p {
     letter-spacing: 2px;
   }
   .music-section p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
 }
 @media (min-width: 992px) {
-  .music-section h4 {
-    font-size: 2rem;
-  }
   .music-section p {
-    font-size: 1.35rem;
+    font-size: 20px;
   }
 }/*# sourceMappingURL=style.css.map */
