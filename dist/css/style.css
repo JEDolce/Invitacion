@@ -11306,6 +11306,12 @@ textarea.form-control-lg {
   0% {
     opacity: 0;
   }
+  33% {
+    opacity: 0.33;
+  }
+  66% {
+    opacity: 0.66;
+  }
   100% {
     opacity: 1;
   }
@@ -11313,6 +11319,12 @@ textarea.form-control-lg {
 @keyframes fade-in {
   0% {
     opacity: 0;
+  }
+  33% {
+    opacity: 0.33;
+  }
+  66% {
+    opacity: 0.66;
   }
   100% {
     opacity: 1;
@@ -11326,7 +11338,7 @@ textarea.form-control-lg {
 }
 .btn a {
   color: #fff;
-  font-weight: 400;
+  font-weight: 500;
 }
 @media (min-width: 992px) {
   .btn {
@@ -11344,7 +11356,7 @@ textarea.form-control-lg {
 .btn--white {
   background-color: #fff;
   border: 2px solid rgba(58, 99, 81, 0.9);
-  width: 8rem;
+  width: 10rem;
   height: 3rem;
 }
 .btn--white a {
@@ -11466,26 +11478,59 @@ textarea.form-control-lg {
 
 .count-section {
   background-color: rgba(58, 99, 81, 0.9);
-  height: 10rem;
+  height: 12rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
 }
-.count-section p {
-  font-weight: 400;
-  color: #f8f9fa;
+.count-section h1 {
+  letter-spacing: 0.25rem;
 }
-@media (min-width: 992px) {
-  .count-section {
-    height: 12rem;
+@media (min-width: 1400px) {
+  .count-section h1 {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+  }
+}
+.count-section ul {
+  padding: 0;
+  margin: 0;
+}
+.count-section ul li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0.45rem;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .count-section ul li {
+    padding: 0.8rem;
+  }
+}
+@media (min-width: 1400px) {
+  .count-section ul li {
+    font-size: 1.25rem;
+    padding: 1.8rem;
+  }
+}
+.count-section ul li span {
+  display: block;
+  font-size: 2rem;
+}
+@media (min-width: 1400px) {
+  .count-section ul li span {
+    font-size: 2.25rem;
   }
 }
 @media (min-width: 1400px) {
   .count-section {
-    height: 15rem;
+    height: 14rem;
   }
 }
 
 .bloque-1-section {
   padding: 5rem 0 5rem 0;
   position: relative;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 768px) {
   .bloque-1-section {
@@ -11520,6 +11565,7 @@ textarea.form-control-lg {
 }
 .bloque-1-section h4 {
   margin: 1.5rem 0 1rem 0;
+  letter-spacing: 2px;
 }
 .bloque-1-section P {
   margin-bottom: 2rem;
@@ -11532,6 +11578,7 @@ textarea.form-control-lg {
   position: relative;
   padding: 4rem 0 4rem 0;
   background-color: rgba(58, 99, 81, 0.9);
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 768px) {
   .bloque-2-section {
@@ -11548,6 +11595,7 @@ textarea.form-control-lg {
     margin-top: 0rem;
   }
   .bloque-2-section .gracias p {
+    font-size: 1.3rem;
     margin: 5rem 0 5rem 3rem;
   }
 }
@@ -11610,17 +11658,28 @@ textarea.form-control-lg {
 
 .gallery-section {
   padding-bottom: 5rem;
-  background-color: #fbf4e9;
+  font-family: "Montserrat", sans-serif;
   position: relative;
+  letter-spacing: 2px;
 }
 .gallery-section h3 {
-  color: rgba(58, 99, 81, 0.9);
-  margin: 0 0 1.5rem 1.5rem;
   padding-top: 2rem;
+  margin: 0 0 1.5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .gallery-section h3 {
+    margin: 0px;
+  }
 }
 @media (min-width: 1400px) {
   .gallery-section h3 {
-    padding-bottom: 2.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
+@media (min-width: 768px) {
+  .gallery-section {
+    height: 40rem;
   }
 }
 @media (min-width: 992px) {
@@ -11638,17 +11697,22 @@ textarea.form-control-lg {
     height: 53rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .gallery-section .carousel {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 55rem;
+    width: 40rem;
   }
   .gallery-section .carousel-inner {
     border-radius: 20px;
     box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+@media (min-width: 992px) {
+  .gallery-section .carousel {
+    width: 55rem;
   }
 }
 @media (min-width: 1400px) {
@@ -11658,10 +11722,11 @@ textarea.form-control-lg {
 }
 
 .contact-section {
-  background-color: #bdd2b6;
+  background-color: #f1e3cc;
+  font-family: "Montserrat", sans-serif;
 }
 @media (min-width: 768px) {
-  .contact-section p {
+  .contact-section .text p {
     font-size: 1.25rem;
   }
 }
@@ -11671,7 +11736,12 @@ textarea.form-control-lg {
   }
 }
 .contact-section .row .phone {
+  display: flex;
+  flex-direction: row;
   margin-bottom: 1rem;
+}
+.contact-section .row .phone p {
+  margin-bottom: 0.25rem;
 }
 .contact-section .row .mail {
   display: flex;
@@ -11680,9 +11750,7 @@ textarea.form-control-lg {
 }
 .contact-section .row .mail a {
   color: #000;
-}
-.contact-section .row .mail i {
-  padding-top: 0.25rem;
+  padding-bottom: 0.5rem;
 }
 @media (min-width: 768px) {
   .contact-section .row .mail {
@@ -11692,6 +11760,12 @@ textarea.form-control-lg {
 .contact-section .row .insta a {
   text-decoration: none;
   color: #000;
+}
+.contact-section .row .insta i {
+  font-size: 1.5rem;
+}
+.contact-section .row .insta span {
+  font-size: 1.1rem;
 }
 @media (min-width: 768px) {
   .contact-section .row .insta {
@@ -11704,8 +11778,9 @@ textarea.form-control-lg {
   }
 }
 .contact-section .row i {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   margin-right: 0.5rem;
+  padding-top: 0.25rem;
 }
 
 footer {
@@ -11721,12 +11796,14 @@ footer p {
 
 .music-section {
   height: 22rem;
+  font-family: "Montserrat", sans-serif;
 }
 .music-section .container {
-  padding-top: 3rem;
+  padding-top: 3.5rem;
 }
 .music-section h4 {
   margin: 1.5rem 0 1rem 0;
+  letter-spacing: 1px;
 }
 .music-section P {
   margin-bottom: 2rem;
@@ -11737,6 +11814,9 @@ footer p {
 @media (min-width: 768px) {
   .music-section {
     padding-top: 2rem;
+  }
+  .music-section h4 {
+    letter-spacing: 2px;
   }
   .music-section p {
     font-size: 1.15rem;

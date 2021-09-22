@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
@@ -27,11 +30,16 @@
     </section>
 
     <!-- COUNTDOWN -->
-    <section class="count-section">
-        <div class="container">
-            <div class="row text-center pt-4">
-                <p class="display-5">Faltan</p>
-                <p class="counter display-6"></p>
+    <section id="section" class="count-section">
+        <div class="container text-center">
+            <h1 id="headline" class="text-uppercase pt-4">Faltan</h1>
+            <div id="countdown">
+              <ul>
+                <li><span id="days"></span>Días</li>
+                <li><span id="hours"></span>Horas</li>
+                <li><span id="minutes"></span>Minutos</li>
+                <li><span id="seconds"></span>Segundos</li>
+              </ul>
             </div>
         </div> 
     </section>
@@ -45,7 +53,7 @@
               <div class="col-md-6 location">
                 <i class="far fa-glass-cheers"></i>
                 <h4 class="text-uppercase">Evento</h4> 
-                <p>El evento tendrá lugar el dia 4 de Diciembre a las 18:00 hs en la <b>Hosteria del Cazador</b>, Escobar.</p>
+                <p>El evento tendrá lugar el dia 4 de Diciembre a las 18:00 hs en la <b>Hosteria El Cazador</b>, Escobar.</p>
                 <button type="button" class="btn rounded-pill">
                     <a class="text-uppercase" href="https://www.google.com/maps/place/Hoster%C3%ADa+El+Cazador/@-34.3074362,-58.7612712,15.29z/data=!4m5!3m4!1s0x0:0xd2afa886a5a473c7!8m2!3d-34.3085348!4d-58.7591437" target="_blank">ubicacion</a>
                     <!-- <span>
@@ -72,7 +80,7 @@
 
     <!-- GALLERY -->
     <section class="gallery-section">
-        <h3 class="display-6">Un poco de nosotros...</h3>
+        <h3 class="display-5 text-center text-uppercase">Nosotros...</h3>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -164,24 +172,30 @@
   <!-- CONTACT -->
     <section class="contact-section">
         <div class="container p-4">
-            <div>  
+            <div>
+              <div class="text">
                 <h4 class="text-uppercase display-6">informacion de contacto</h4> 
                 <p class="mb-4">Si queres consultarnos algo: </p>
-                <div class="row">
-                  <div class="col-md-4 phone">
-                    <i class="far fa-phone-alt"></i><span>(011) 3211-6712 | (011) 3446-3180</span>
+              </div>  
+              <div class="row">
+              <div class="col-md-3 phone">
+                <i class="far fa-phone-alt"></i> <!-- <span>(011) 3211-6712 | (011) 3446-3180</span> --> 
+                <div>
+                  <p>(011) 3211-6712</p>
+                  <p>(011) 3446-3180</p>
+                </div>
+              </div>
+              <div class="col-md-4 mail">
+                <i class="far fa-envelope"></i>
+                 <div>
+                      <a href="mailto:juandolce20@gmail.com">juandolce20@gmail.com</a><br><a class="yat" href="mailto:yani.toledo12@gmail.com">yani.toledo12@gmail.com</a>
                   </div>
-                  <div class="col-md-4 mail">
-                    <i class="far fa-envelope"></i>
-                    <div>
-                        <a href="mailto:juandolce20@gmail.com">juandolce20@gmail.com</a><br><a class="yat" href="mailto:yani.toledo12@gmail.com">yani.toledo12@gmail.com</a>
-                    </div>
-                  </div> 
-                  <div class="col-md-4 insta">
-                    <i class="fab fa-instagram"></i><span>#yaniykike</span>
-                  </div>
+              </div> 
+                <div class="col-md-5 insta">
+                  <i class="fab fa-instagram"></i><span>#yaniykike</span>
                 </div>
             </div>
+         </div>
     </section>
 
     <!-- FOOTER -->
@@ -194,7 +208,7 @@
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./dist/js/time-counter.js" defer></script>
+    <script src="./dist/js/countdown.js" defer></script>
     <script src="./dist/js/datos.js" defer></script>
 </body>
 </html>

@@ -8,7 +8,7 @@
 
     a {
         color: $white;
-        font-weight: 400;
+        font-weight: 500;
     }
 
     @include media-breakpoint-up(lg) {
@@ -28,7 +28,7 @@
     &--white {
         background-color: $white;
         border: 2px solid $ligth-green;
-        width: 8rem;
+        width: 10rem;
         height: 3rem;
 
         a {

@@ -1,13 +1,17 @@
 @use '../customs' as *;
 
 .contact-section {
-    background-color: $very-ligth-green;
+    background-color: $beige-2;
+    font-family: 'Montserrat', sans-serif;
 
     @include media-breakpoint-up(md) {
-            
-        p {
-            font-size: 1.25rem;
-        }
+
+        .text {
+
+            p {
+                font-size: 1.25rem;
+            }
+        } 
     }
 
     .row {
@@ -16,7 +20,13 @@
         } 
 
         .phone {
+            display: flex;
+            flex-direction: row;
             margin-bottom: 1rem;
+
+            p {
+                margin-bottom: 0.25rem;
+            }
         }
     
         .mail {
@@ -26,10 +36,7 @@
             
             a {
                 color: $black;
-            }
-
-            i {
-                padding-top: 0.25rem;
+                padding-bottom: 0.5rem;
             }
 
             @include media-breakpoint-up(md) {
@@ -44,6 +51,14 @@
                 color: $black;
             }
 
+            i {
+                font-size: 1.5rem;
+            }
+
+            span {
+                font-size: 1.1rem;
+            }
+
             @include media-breakpoint-up(md) {
                 padding-left: 2rem;
             } 
@@ -54,8 +69,9 @@
         }
     
         i {
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             margin-right: 0.5rem;
+            padding-top: 0.25rem;
         }
     }
 

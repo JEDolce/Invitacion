@@ -5,6 +5,7 @@
     position: relative;
     padding: 4rem 0 4rem 0;
     background-color: $ligth-green;
+    font-family: 'Montserrat', sans-serif;
 
 
     @include media-breakpoint-up(md) {
@@ -20,6 +21,7 @@
             margin-top: 0rem;
 
             p {
+                font-size: 1.3rem;
                 margin: 5rem 0 5rem 3rem;
             }
         } 
