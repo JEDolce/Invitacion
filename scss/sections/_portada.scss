@@ -6,19 +6,17 @@
     position: relative;
     height: 100vh;
     font-family: 'Satisfy', cursive;
-    background-image: url("../images/greeting-card.svg");
-    background-repeat: no-repeat;
+    background-image: url("../images/greeting-card.jpg");
     background-position: center center;
-    background-size: 50rem;                  //Tambien puede ser cover 
-    background-attachment: fixed;
-
+    // background-attachment: fixed;         
+    -webkit-background-size: 50rem;
+    background-size: 50rem;                  //Tambien puede ser cover
+    background-repeat: no-repeat;
+    
     @include media-breakpoint-up(md) {
+        -webkit-background-size: 60rem;
         background-size: 60rem;
     }
-
-    /*@include media-breakpoint-up(lg) {
-        background-size: 70rem;
-    }*/
     
     .container {
         @include absCenter;
@@ -31,18 +29,16 @@
         position: absolute;
         top: 50%;
         left: 50%; 
+        -webkit-transform: translate(-40%, -60%);
         transform: translate(-40%, -60%);
-        animation: fade-in 1.5s ease-in-out;  
+        -webkit-animation: fade-in 1.5s ease-in-out; 
+        animation: fade-in 1.5s ease-in-out; 
+        
 
         @include media-breakpoint-up(lg) {
             font-size: 5rem;
             line-height: 7rem;
-        }
-    
-       /* @include media-breakpoint-up(xxl) {
-            font-size: 6rem;
-            line-height: 8rem;
-        }   */  
+        } 
     }
 
     .arrow {
@@ -52,6 +48,7 @@
         position: absolute;
         bottom: 70px;
         left: 50%;
+        -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         font-size: 20px;
 
@@ -60,16 +57,22 @@
             width: $base * 3.5;
             height: $base * 0.8;
             opacity: 0;
+            -webkit-transform: scale(0.3);
             transform: scale(0.3);
+            -webkit-animation: move-chevron 3s ease-out infinite;
             animation: move-chevron 3s ease-out infinite;
-
+            
+            
             &:first-child {
+                -webkit-animation: move-chevron 3s ease-out 1s infinite;
                 animation: move-chevron 3s ease-out 1s infinite;
             }
               
             &:nth-child(2) {
+                -webkit-animation: move-chevron 3s ease-out 2s infinite;
                 animation: move-chevron 3s ease-out 2s infinite;
             }
+
               
             &:before {
                content: '';
@@ -79,6 +82,7 @@
                width: 50%;
                background: $dark-green;
                left: 0;
+               -webkit-transform: skewY(30deg);
                transform: skewY(30deg);
             }
 
@@ -91,6 +95,7 @@
                background: $dark-green;
                right: 0;
                width: 50%;
+               -webkit-transform: skewY(-30deg);
                transform: skewY(-30deg);
             }
         }
