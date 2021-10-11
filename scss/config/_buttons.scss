@@ -5,11 +5,14 @@
     border: none;
     width: 12rem;
     height: 3rem;
-
-    a {
-        color: $white;
-        font-weight: 500;
-    }
+    /*Desde aca era el a*/
+    color: $white;
+    font-weight: 500;
+    letter-spacing: 0.08rem;
+    padding-top: 0.75rem;
+    /*
+    Se puede cambiar height y padding top por line-height = 40px aprox y vertical-align = middle
+    */
 
     @include media-breakpoint-up(lg) {
         width: 15rem;
@@ -18,11 +21,8 @@
     &:hover {
         background-color: $white;
         transition: 0.35s ease-in-out;  
-        border: 1.5px solid $beige;  
-
-        a {
-            color: $beige;
-        }
+        border: 1.5px solid $beige;
+        color: $beige;  
     }
 
     &--white {
