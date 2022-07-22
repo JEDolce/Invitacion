@@ -1,7 +1,7 @@
 {
-  "name": "jm-newsletter",
+  "name": "invitacion-casamiento",
   "version": "1.0.0",
-  "description": "Newsletter de RRNN para JM",
+  "description": "Invitacion a mi casamiento",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "RRNN",
     "JM"
   ],
-  "author": "JD",
+  "author": "JEDolce",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.3.4",
